@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvBiliar;
     private ProgressBar pbBiliar;
-    private FloatingActionButton fabBiliar;
+    private FloatingActionButton fabTambah;
     private RecyclerView.Adapter adBiliar;
     private RecyclerView.LayoutManager lmBiliar;
 
@@ -42,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
         rvBiliar = findViewById(R.id.rv_biliar);
         pbBiliar = findViewById(R.id.pb_biliar);
-        fabBiliar = findViewById(R.id.fab_tambah);
+        fabTambah = findViewById(R.id.fab_tambah);
 
         lmBiliar = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         rvBiliar.setLayoutManager(lmBiliar);
 
-        fabBiliar.setOnClickListener(new View.OnClickListener() {
+        fabTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,TambahActivity.class));
@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 adBiliar =new AdapterBiliar(MainActivity.this,listBiliar);
                 rvBiliar.setAdapter(adBiliar);
                 adBiliar.notifyDataSetChanged();
-
                 pbBiliar.setVisibility(View.GONE);
             }
 
