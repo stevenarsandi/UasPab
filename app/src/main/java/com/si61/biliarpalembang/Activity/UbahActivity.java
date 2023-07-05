@@ -44,7 +44,7 @@ public class UbahActivity extends AppCompatActivity {
         yLokasi = tangkap.getStringExtra("xLokasi");
         yUrlmap = tangkap.getStringExtra("xUrlmap");
         yjam = tangkap.getStringExtra("xJam");
-        ynohp = tangkap.getStringExtra("xnohp");
+        ynohp = tangkap.getStringExtra("xNoHp");
 
         etNama.setText(yNama);
         etLokasi.setText(yLokasi);
@@ -62,19 +62,19 @@ public class UbahActivity extends AppCompatActivity {
                 nohp = etnohp.getText().toString();
 
                 if (nama.trim().isEmpty()){
-                    etNama.setError("Nama hotel harus diisi");
+                    etNama.setError("Nama Tempat Biliar harus diisi");
                 }
                 else if(lokasi.trim().isEmpty()){
-                    etLokasi.setError("Alamat hotel harus diisi");
+                    etLokasi.setError("Lokasi Biliar harus diisi");
                 }
                 else if(urlmap.trim().isEmpty()){
-                    etUrlmap.setError("Urlmap hotel harus diisi");
+                    etUrlmap.setError("Urlmap Biliar harus diisi");
                 }
                 else if(jam.trim().isEmpty()){
-                    etjam.setError("Telepon hotel harus diisi");
+                    etjam.setError("Jam Operasional Biliar harus diisi");
                 }
                 else if(nohp.trim().isEmpty()) {
-                    etnohp.setError("Bintang hotel harus diisi");
+                    etnohp.setError("No Telepon Biliar harus diisi");
                 }
                 else{
                     prosesUbah();

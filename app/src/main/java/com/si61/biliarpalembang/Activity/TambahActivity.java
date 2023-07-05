@@ -45,19 +45,19 @@ public class TambahActivity extends AppCompatActivity{
                 nohp = etNoHp.getText().toString();
 
                 if (nama.trim().isEmpty()){
-                    etNama.setError("Nama hotel harus diisi");
+                    etNama.setError("Nama Tempat Biliar harus diisi");
                 }
                 else if(lokasi.trim().isEmpty()){
-                    etLokasi.setError("Alamat hotel harus diisi");
+                    etLokasi.setError("Lokasi Biliar harus diisi");
                 }
                 else if(urlmap.trim().isEmpty()){
-                    etUrlmap.setError("Urlmap hotel harus diisi");
+                    etUrlmap.setError("Urlmap biliar harus diisi");
                 }
                 else if(jam.trim().isEmpty()){
-                    etJam.setError("Telepon hotel harus diisi");
+                    etJam.setError("jam operasional biliar harus diisi");
                 }
                 else if(nohp.trim().isEmpty()){
-                    etNoHp.setError("Bintang hotel harus diisi");
+                    etNoHp.setError("No Telepon biliar harus diisi");
                 }
                 else{
                     prosesSimpan();

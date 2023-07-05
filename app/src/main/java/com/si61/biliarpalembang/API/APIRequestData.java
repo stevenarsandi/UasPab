@@ -20,7 +20,7 @@ public interface APIRequestData {
             @Field("lokasi") String lokasi,
             @Field("urlmap") String urlmap,
             @Field("jam") String jam,
-            @Field("telp") String nohp
+            @Field("nohp") String nohp
     );
 
     @FormUrlEncoded
@@ -31,7 +31,7 @@ public interface APIRequestData {
             @Field("lokasi") String lokasi,
             @Field("urlmap") String urlmap,
             @Field("jam") String jam,
-            @Field("telp") String nohp
+            @Field("nohp") String nohp
     );
 
     @FormUrlEncoded

@@ -1,7 +1,7 @@
 package com.si61.biliarpalembang.Model;
 
 public class ModelBiliar {
-    private String id,nama,lokasi,urlmap,nohp,jam_operasional;
+    private String id,nama,lokasi,urlmap,jam, nohp;
 
     public String getId() {
         return id;
@@ -19,9 +19,7 @@ public class ModelBiliar {
         return urlmap;
     }
 
-    public String getJam() {
-        return jam_operasional;
-    }
+    public String getJam() { return jam; }
 
     public String getNohp() { return nohp; }
 

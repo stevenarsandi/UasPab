@@ -33,7 +33,6 @@
         android:id="@+id/tv_urlmap1"
         android:text="URL Map Billiar"
         android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
         />
 
@@ -43,7 +42,6 @@
         android:id="@+id/tv_jam1"
         android:text="Jam Operasional Billiar"
         android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
         />
 
@@ -53,7 +51,6 @@
         android:id="@+id/tv_nohp1"
         android:text="Nomor Telepon Billiar"
         android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
         />
 

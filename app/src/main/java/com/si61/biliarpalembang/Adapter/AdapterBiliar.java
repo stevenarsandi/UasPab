@@ -82,7 +82,7 @@ public class AdapterBiliar extends RecyclerView.Adapter<AdapterBiliar.VHBiliar>{
                     kirim.putExtra("xNama1", tvNama.getText().toString());
                     kirim.putExtra("xLokasi1", tvLokasi.getText().toString());
                     kirim.putExtra("xUrlmap1", tvUrlmap.getText().toString());
-                    kirim.putExtra("xJam", tvJam.getText().toString());
+                    kirim.putExtra("xJam1", tvJam.getText().toString());
                     kirim.putExtra("xNoHp1", tvNoHp.getText().toString());
                     ctx.startActivity(kirim);
                 }
